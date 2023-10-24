@@ -5,7 +5,6 @@ class Node{
 public:
 	int data;
 	Node *next;
-
 	Node (int new_data){
 		data = new_data;
 		next = NULL;
@@ -43,7 +42,7 @@ void PopFront(Node* &head_ref){
 	delete tmp; 
 }
 
-void PopBack(Node* &head_ref){
+void PopBack(Node* head_ref){
 	if(head_ref == NULL) return;
 	if(head_ref->next == NULL) delete head_ref;
 	Node* second_last = head_ref;

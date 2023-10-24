@@ -1,0 +1,5 @@
+*.exe
+.py
+.vscode
+vscode
+__pycache__
